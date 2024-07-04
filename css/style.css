@@ -1,0 +1,387 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --background-color: #ffff;
+  --warna-1: #ffb703;
+  --warna-2: #023047;
+  --warna-3: #219ebc;
+  --warna-4: #fb8500;
+
+  --font-1: #0f0f0f;
+  --font-2: gray;
+  --font-3: #023047;
+  --font-4: #ffff;
+
+  --h1-font-size: 40px;
+  --h2-font-size: 32px;
+  --small-font-size: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+
+/* Global css */
+section {
+  padding: 70px 0;
+}
+section .section-title {
+  font-size: var(--h2-font-size);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* navbar */
+/* CSS untuk membuat navbar fixed saat di-scroll */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Menempatkan navbar di atas elemen lain */
+  background-color: var(--warna-1); /* Sesuaikan dengan warna background yang diinginkan */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Efek shadow, sesuaikan sesuai kebutuhan */
+}
+/* Mengubah warna tulisan brand di navbar */
+.navbar .navbar-brand {
+  color: var(--font-3); /* Ganti dengan kode warna yang Anda inginkan */
+}
+
+/* Mengubah warna tulisan link di navbar */
+.navbar .nav-link {
+  color: var(--font-3); /* Ganti dengan kode warna yang Anda inginkan */
+}
+
+/* Opsi tambahan: Mengubah warna tulisan saat link aktif atau saat di-hover */
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: var(--warna-3); /* Warna saat mouse hover atau link aktif */
+}
+.cv {
+  color: #fff;
+  background-color: var(--warna-2);
+}
+.cv:hover {
+  color: #fff;
+  background-color: var(--warna-3);
+}
+
+/* CSS untuk memberikan margin atas pada konten di bawah navbar */
+body {
+  padding-top: 70px; /* Sesuaikan dengan tinggi navbar */
+}
+
+/* Akhir Nvbar */
+
+/* Header */
+.header-section .header-title {
+  font-size: var(--h1-font-size);
+}
+.header-section .header-skill {
+  color: var(--font-1);
+}
+.header-section .header-skill:hover {
+  color: var(--warna-4);
+}
+.header-section .header-skill i {
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.header-section .header-skill:hover i {
+  transform: rotate(-45deg);
+}
+.header-section .header-img {
+  width: 90%;
+}
+.header-section .text-warna {
+  color: var(--warna-2);
+}
+.list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.basic_info a {
+  color: var(--font-2);
+}
+.personal_social a {
+  font-size: 30px;
+  color: var(--warna-1);
+}
+.nama_pribadi h6 {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2.1px;
+  font-weight: normal;
+  margin-bottom: 12px;
+}
+.nama_pribadi h3{
+  font-size: 48px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.nama_pribadi h4{
+  font-size: 16px;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.nama_pribadi p{
+  font-family: "Roboto", sans-serif;
+    max-width: 540px;
+    color: #777777;
+}
+.list.personal_social {
+  display: flex;
+  gap: 20px; /* Menentukan jarak antar ikon */
+  list-style: none; /* Menghilangkan bullet points pada list */
+  padding: 0; /* Menghilangkan padding pada list */
+  margin: 0; /* Menghilangkan margin pada list */
+}
+
+.list.personal_social li {
+  margin: 0;
+  padding: 0;
+}
+
+.list.personal_social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none; /* Menghilangkan underline pada link */
+}
+
+.list.personal_social i {
+  font-size: 35px; /* Ukuran ikon */
+  color: var(--warna-1); /* Warna ikon, ubah sesuai kebutuhan */
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .header-section {
+    text-align: center;
+  }
+
+  .header-img {
+    width: 100%; /* Sesuaikan dengan kebutuhan */
+    margin-top: 20px; /* Sesuaikan dengan kebutuhan */
+  }
+
+  .header-title {
+    margin-bottom: 10px; /* Sesuaikan dengan kebutuhan */
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .header-img {
+    margin-top: 10px; /* Sesuaikan dengan kebutuhan */
+  }
+
+  .header-section .header-title {
+    font-size: 35px; /* Sesuaikan dengan kebutuhan */
+    margin-bottom: 5px; /* Sesuaikan dengan kebutuhan */
+  }
+
+  .header-skill {
+    font-size: 14px; /* Sesuaikan dengan kebutuhan */
+  }
+
+  .text-secondary {
+    font-size: 12px; /* Sesuaikan dengan kebutuhan */
+  }
+  .header-section p {
+    margin-top: 5px;
+  }
+}
+
+/* Akhir Header */
+
+/* Awal about me */
+.about-section .about-img {
+  width: 90%;
+}
+.about-section {
+  background-color: #eaeaea;
+}
+.about-section h3 {
+  color: var(--warna-1);
+}
+.cek-cv button {
+  padding: 10px 20px; /* Sesuaikan padding sesuai kebutuhan */
+  font-size: 16px; /* Sesuaikan ukuran font sesuai kebutuhan */
+  background-color: var(--warna-1);
+  color: var(--font-4);
+  border-style: none;
+}
+.cek-cv button:hover {
+  color: var(--font-4);
+  background-color: var(--warna-4);
+}
+/* Tablet */
+@media (max-width: 768px) {
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-img {
+    margin-bottom: 20px; /* Sesuaikan dengan kebutuhan */
+  }
+
+  .col-md-5 {
+    text-align: center;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .about-img {
+    margin-bottom: 10px; /* Sesuaikan dengan kebutuhan */
+  }
+}
+
+/* Akhir About Me */
+
+/* Skill */
+.pengalaman-section .progress {
+  width: 100%;
+  height: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background-color: var(--font-2);
+}
+
+.pengalaman-section .progress .progress-bar {
+  background-color: var(--warna-2);
+}
+
+.pengalaman-section .nav-pills .nav-link {
+  color: var(--warna-2);
+}
+
+.pengalaman-section .nav-pills .nav-link.active {
+  color: #ffffff;
+}
+
+.pengalaman-section .tab-content hr {
+  width: 30px;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: var(--warna-1); /* Red color */
+  color: #fff; /* White text */
+}
+.pengalaman-section h1 {
+  color: var(--warna-1);
+}
+.pengalaman-section h3 {
+  color: var(--warna-1);
+}
+
+/* ... (bagi
+  
+/* Akhir Sekill */
+
+/* Portofolio */
+.portofolio-section{
+  background-color: #eaeaea;
+}
+.portofolio-section .card .card-img-top{
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px){
+  .portofolio-section .card .card-img-top{
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.portofolio-section p{
+  color: var(--warna-1);
+  font-weight: bold;
+}
+.portofolio-section h2{
+  color: var(--warna-1);
+}
+.portofolio-section .card .card-body h6{
+  color: var(--font-3);
+}
+.portofolio-section .card .card-body a{
+  color: var(--warna-1)
+}
+.portofolio-section i{
+  color: var(--warna-4);
+}
+/* Akhir Portofolio */
+
+/* Contact */
+.contact-section {
+  background-color: var(--background-color);
+}
+.contact-section h1 {
+  color: var(--warna-1);
+}
+.contact-section h3 {
+  color: var(--warna-1);
+}
+.contact-section i {
+  color: var(--warna-1);
+}
+.contact-section button {
+  background-color: var(--warna-1);
+  color: #ffffff;
+}
+.contact-section button:hover {
+  color: #ffffff;
+  background-color: var(--warna-4);
+}
+.contact-section a{
+  color: var(--font-1);
+}
+.contact-section .form-control{
+background-color: #e5e4e4;
+}
+/* Akhir Contact */
+
+/* footer */
+footer {
+  background-color: var(--warna-2);
+}
